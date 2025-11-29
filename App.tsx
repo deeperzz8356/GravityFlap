@@ -4,6 +4,7 @@ import GameCanvas from './components/GameCanvas';
 import { generateGameOverCommentary } from './services/geminiService';
 import { soundService } from './services/soundService';
 import { Play, RotateCcw, AlertCircle, Gauge, Layers, Trophy } from 'lucide-react';
+import AdBanner from './components/AdBanner';
 
 export default function App() {
   const [gameState, setGameState] = useState<GameState>(GameState.MENU);
@@ -156,8 +157,8 @@ export default function App() {
                     key={key}
                     onClick={() => setDifficultyKey(key)}
                     className={`flex-1 py-2 md:py-3 text-[10px] md:text-sm font-bold uppercase tracking-wide rounded transition-all active:scale-95 ${difficultyKey === key
-                        ? 'bg-blue-600 text-white shadow-lg'
-                        : 'text-gray-400 hover:text-white hover:bg-gray-700'
+                      ? 'bg-blue-600 text-white shadow-lg'
+                      : 'text-gray-400 hover:text-white hover:bg-gray-700'
                       }`}
                   >
                     {DIFFICULTIES[key].label}
@@ -178,8 +179,8 @@ export default function App() {
                     key={themeObj.value}
                     onClick={() => setThemeKey(themeObj.value)}
                     className={`flex-1 py-2 md:py-3 text-[10px] md:text-sm font-bold uppercase tracking-wide rounded transition-all active:scale-95 ${themeKey === themeObj.value
-                        ? 'bg-purple-600 text-white shadow-lg'
-                        : 'text-gray-400 hover:text-white hover:bg-gray-700'
+                      ? 'bg-purple-600 text-white shadow-lg'
+                      : 'text-gray-400 hover:text-white hover:bg-gray-700'
                       }`}
                   >
                     {themeObj.label}

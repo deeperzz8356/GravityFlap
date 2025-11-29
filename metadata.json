@@ -1,0 +1,5 @@
+{
+  "name": "Gravity Flap Flyer",
+  "description": "An endless arcade flyer where you tap to invert gravity. Features AI-generated skins and dynamic game-over commentary.",
+  "requestFramePermissions": []
+}
